@@ -12,7 +12,7 @@ We use this
 (https://play.google.com/store/apps/details?id=com.pas.webcam&hl=ru&gl=US&pli=1) 
 application for Android as an IP camera, but you can use another
 
-When everything is ready, you need to launch menu.py, we will see the standard greeting
+When everything is ready, you need to launch `menu.py`, we will see the standard greeting
 (welcome!
 select the operating mode)
 | Mode | Description |
