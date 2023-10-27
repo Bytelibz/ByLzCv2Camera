@@ -1,6 +1,8 @@
 # ByLzCv2Camera
 Cv2Camera with face detection with using phone
 
+`Information about the latest update is at the very bottom of the Readme`
+
 A short tutorial on using ByLz camera with cv2.
 
 Before you start using it, please read the OpenCV documentation for Python - https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html and https://pypi.org/project/opencv-python/
@@ -29,3 +31,9 @@ in `url = "http://yourip//shot.jpg"` you will need to insert a link with your IP
 
 
 This is the first version, updates will be released in the future. There are also comments and explanations inside the code
+
+`Updated`:
+
+Now detected face in triggermode  will be displayed using matplotlib and saved in the directory: `data\images`
+![python_oY4Tfehp12](https://github.com/Bytelibz/ByLzCv2Camera/assets/55909716/ca1626a1-c489-44ff-b97c-2cf806b20c07)
+
