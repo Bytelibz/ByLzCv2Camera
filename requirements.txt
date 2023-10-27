@@ -1,0 +1,4 @@
+imutils==0.5.4
+numpy==1.26.1
+opencv_python==4.8.1.78
+Requests==2.31.0
