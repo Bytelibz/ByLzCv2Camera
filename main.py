@@ -42,14 +42,13 @@ def maincamtrigger():
             for (x, y, w, h) in faces_rect:
                 cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 255), thickness=2)
                 print('Some face detected, do u need to show y/n')
+                LastWritten = cv2.imwrite('C:\ByLz\data\images\lastdetected.png', img)
                 
-                    
                 sh1 = input()
                 if sh1 == 'y':
-                    cv2.imshow("ByLz", img)
-                    isWritten = cv2.imwrite('detected.png', img)   
-                    if cv2.waitKey(1) == 27:
-                        break
+                    img = mpimg.imread('C:\ByLz\data\images\lastdetected.png')
+                    imgplot = plt.imshow(img)
+                    plt.show()
                 if sh1 == 'n':
                     os.system('cls')       
 
