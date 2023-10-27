@@ -1,0 +1,1 @@
+Now lastdetected.png will open via matplotlib > checkout requirements.txt
