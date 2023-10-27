@@ -15,10 +15,10 @@ application for Android as an IP camera, but you can use another
 When everything is ready, you need to launch `menu.py`, we will see the standard greeting
 (welcome!
 select the operating mode)
-| Mode | Description |
-| --- | --- |
-| `triggermode` | will send a notification when a face is detected, offer to examine the object |
-| `maincameramode` | will open a permanent view of the window with the camera footage |
+| Mode | Description | Command |
+| --- | --- | --- |
+| `triggermode` | will send a notification when a face is detected, offer to examine the object | 1 |
+| `maincameramode` | will open a permanent view of the window with the camera footage | 2 |
 
 `main.py`:
 
