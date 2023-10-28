@@ -79,4 +79,5 @@ Now detected face in triggermode  will be displayed using matplotlib and saved i
 When you close the matplotlib window, `maincamtrigger()` will continue scanning and again offer to open the photo with the detected face
 
 checkout `requirements.txt` and install matbpotlib via `pip install matplotlib`
+
 checkout `requirements.txt` and install plyer via `pip install plyer`
