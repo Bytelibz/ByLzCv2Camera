@@ -4,10 +4,14 @@ import requests
 import numpy as np
 import imutils
 import os
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from plyer import notification
 #Here, instead of 'C:\opencv-4.x\data\haarcascades\haarcascade_frontalface_default.xml', insert 'your path\haarcascade_frontalface_default.xml'
 haar_cascade = cv2.CascadeClassifier('C:\opencv-4.x\data\haarcascades\haarcascade_frontalface_default.xml')
 url = "http://yourip//shot.jpg" #Using ipwebcam
-
+def shownotification(title, message):
+    notification.notify(title = title, app_name='BeLzCv2',  message = message, app_icon = 'C:\ByLz\data\src\cam.ico', timeout = 5)
 
 Shable = 1 #instead true
 #function of displaying constant camera viewing, with drawing of detected faces
@@ -31,6 +35,7 @@ def maincam():
         cv2.destroyAllWindows()
 #face detection function without constantly viewing the camera
 def maincamtrigger():
+    print('triggermode started')
     if Shable == 1:
         while True:
             img_resp = requests.get(url)
@@ -42,6 +47,7 @@ def maincamtrigger():
             for (x, y, w, h) in faces_rect:
                 cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 255), thickness=2)
                 print('Some face detected, do u need to show y/n')
+                shownotification('ByLz', 'Some face detected, check main window')
                 LastWritten = cv2.imwrite('C:\ByLz\data\images\lastdetected.png', img)
                 
                 sh1 = input()
@@ -50,6 +56,6 @@ def maincamtrigger():
                     imgplot = plt.imshow(img)
                     plt.show()
                 if sh1 == 'n':
-                    os.system('cls')       
+                    os.system('cls')             
 
             
