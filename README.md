@@ -62,10 +62,16 @@ it is recommended to use the full path to your haar cascade
 `cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 255), thickness=2)` you can change color of rectangle(0, 0, 0) etc.
 
 
-
 This is the first version, updates will be released in the future. There are also comments and explanations inside the code
 
 `Updated`:
+
+`Push notifications` are now active in triggermode
+
+![Code_vGXM4HO2a3](https://github.com/Bytelibz/ByLzCv2Camera/assets/55909716/c4d05ecb-0306-4a6b-8fa7-abf69cb525c1)
+
+
+
 
 Now detected face in triggermode  will be displayed using matplotlib and saved in the directory: `data\images`
 ![python_oY4Tfehp12](https://github.com/Bytelibz/ByLzCv2Camera/assets/55909716/ca1626a1-c489-44ff-b97c-2cf806b20c07)
@@ -73,3 +79,4 @@ Now detected face in triggermode  will be displayed using matplotlib and saved i
 When you close the matplotlib window, `maincamtrigger()` will continue scanning and again offer to open the photo with the detected face
 
 checkout `requirements.txt` and install matbpotlib via `pip install matplotlib`
+checkout `requirements.txt` and install plyer via `pip install plyer`
