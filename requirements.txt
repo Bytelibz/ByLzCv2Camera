@@ -2,5 +2,5 @@ imutils==0.5.4
 matplotlib==3.8.0
 numpy==1.26.1
 opencv_python==4.8.1.78
+plyer==2.1.0
 Requests==2.31.0
-
